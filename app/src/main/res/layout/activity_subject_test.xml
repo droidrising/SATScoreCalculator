@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/perfectbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wordpress.httpsdroidrisinglabs.satscorecalculator.SubjectTest">
+
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Space"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/numWrongSpace"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Number Wrong: "
+
+        android:layout_marginTop="41dp"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/test"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="27dp"
+        android:inputType="number"
+        android:hint="Space"
+        android:id="@+id/numWrong"
+        android:layout_alignBaseline="@+id/numWrongSpace"
+        android:layout_alignBottom="@+id/numWrongSpace"
+
+        android:layout_toEndOf="@+id/test"
+        android:layout_marginStart="25dp"
+        android:imeOptions="actionDone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numBlankSpace"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Number Blank: "
+
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/numWrongSpace"
+        android:layout_alignStart="@+id/numWrongSpace" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="27dp"
+        android:inputType="number"
+        android:id="@+id/numBlank"
+        android:hint="Space"
+        android:layout_alignBaseline="@+id/numBlankSpace"
+        android:layout_alignBottom="@+id/numBlankSpace"
+        android:layout_alignStart="@+id/numWrong"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:id="@+id/calcSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculate!"
+        android:textSize="15dp"
+        android:onClick="calcSubject"
+        android:layout_below="@+id/numBlank"
+        android:layout_toStartOf="@+id/numBlank"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/subjectScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calcSubject"
+        android:layout_below="@+id/calcSubject"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Score: "
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+
+</RelativeLayout>
